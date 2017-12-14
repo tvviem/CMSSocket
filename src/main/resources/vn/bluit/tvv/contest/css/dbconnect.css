@@ -1,0 +1,20 @@
+* {
+    -fx-primary: #2A2E37; /* background-color all container, control */
+    -fx-secondary: #FFFF8D; /* support-color for sharp function */
+    -fx-primarytext: #D6D6D6; /* text-color */
+    -fx-red: #FF0000;
+}
+.root {
+    -fx-background-color: -fx-primary;
+}
+.button {
+    -fx-background-color: -fx-primary;
+    -fx-text-fill: -fx-primarytext;
+    -fx-pref-width: 100px;
+}
+
+.text-field {
+    -fx-text-fill: -fx-primarytext;
+    -fx-font-size: 12pt;
+    -jfx-focus-color: -fx-secondary;
+}

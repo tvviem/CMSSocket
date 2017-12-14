@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefWidth="110.0" spacing="10.0" stylesheets="@../css/main.css" xmlns="http://javafx.com/javafx/8.0.144" xmlns:fx="http://javafx.com/fxml/1">
+   <padding>
+      <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+   </padding>
+   <children>
+      <JFXButton contentDisplay="TOP" maxHeight="1.7976931348623157E308" text="KỲ THI" VBox.vgrow="ALWAYS">
+         <graphic>
+            <FontAwesomeIconView fill="#e0e0e0" glyphName="TABLE" size="32" />
+         </graphic>
+      </JFXButton>
+      <JFXButton contentDisplay="TOP" layoutX="14.0" layoutY="14.0" maxHeight="1.7976931348623157E308" text="TẠO ĐỀ" VBox.vgrow="ALWAYS">
+         <graphic>
+            <FontAwesomeIconView fill="#e0e0e0" glyphName="LIST_ALT" size="32" />
+         </graphic>
+      </JFXButton>
+      <JFXButton contentDisplay="TOP" layoutX="14.0" layoutY="80.0" maxHeight="1.7976931348623157E308" text="CÂU HỎI" VBox.vgrow="ALWAYS">
+         <graphic>
+            <FontAwesomeIconView fill="#e0e0e0" glyphName="QUESTION_CIRCLE" size="32" />
+         </graphic>
+      </JFXButton>
+      <JFXButton contentDisplay="TOP" layoutX="14.0" layoutY="146.0" maxHeight="1.7976931348623157E308" text="THÍ SINH" VBox.vgrow="ALWAYS">
+         <graphic>
+            <FontAwesomeIconView fill="#e0e0e0" glyphName="USER_CIRCLE" size="32" />
+         </graphic>
+      </JFXButton>
+      <JFXButton contentDisplay="TOP" layoutX="14.0" layoutY="212.0" maxHeight="1.7976931348623157E308" text="PHÂN CÔNG" VBox.vgrow="ALWAYS">
+         <graphic>
+            <MaterialDesignIconView fill="#e0e0e0" glyphName="ACCOUNT_LOCATION" size="32" />
+         </graphic>
+      </JFXButton>
+      <JFXButton contentDisplay="TOP" layoutX="14.0" layoutY="278.0" maxHeight="1.7976931348623157E308" text="KẾT XUẤT" VBox.vgrow="ALWAYS">
+         <graphic>
+            <MaterialDesignIconView fill="#e0e0e0" glyphName="EXPORT" size="32" />
+         </graphic>
+      </JFXButton>
+   </children>
+</VBox>

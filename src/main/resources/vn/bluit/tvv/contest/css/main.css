@@ -1,0 +1,94 @@
+* {
+    -fx-primary: #2A2E37; /* background-color all container, control */
+    -fx-secondary: #FFFF8D; /* support-color for sharp function */
+    -fx-primarytext: #d2d2d2; /* text-color */
+    -fx-red: #FF0000;
+}
+.root {
+    -fx-background-color: -fx-primary;
+}
+/* UI LOGIN STYLES */
+.button {
+    -fx-text-fill: -fx-primarytext;
+}
+/* Thiet lap mau ban dau cho cac icon */
+.glyph-icon {
+    -fx-fill: -fx-primarytext;
+}
+.glyph-icon:hover  {
+    -fx-border-color: -fx-secondary;
+    -fx-background-color: -fx-secondary;
+}
+.login-button {
+    -fx-border-color: -fx-secondary;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-pref-width: 100;
+    -fx-font-size: 13px;
+}
+.setting-button {
+    -fx-border-color: -fx-secondary;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-pref-width: 100;
+    -fx-font-size: 13px;
+}
+.login-button:hover, .setting-button:hover {
+    -fx-border-color: -fx-secondary;
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: -fx-primary;
+}
+/* thiet lap mau cho fontawesome ben trong Button */
+.login-button:hover, .setting-button:hover .glyph-icon {
+    -fx-fill: -fx-primary;
+}
+
+.text-field {
+    -fx-text-fill: -fx-primarytext;
+    -fx-font-size: 12pt;
+    -jfx-focus-color: -fx-secondary;
+}
+.invalid-aut {
+    -jfx-unfocus-color: -fx-red;
+    -jfx-focus-color: -fx-red;
+}
+
+/* JFXTABPANE STYLES*/
+.tab {
+    -fx-pref-width: 400;
+    -fx-pref-height: 60;
+    -fx-background-color: -fx-primary;
+}
+.tab-header-background {
+    -fx-background-color: -fx-primary;
+}
+
+/* MENUBAR STYLES */
+.menu-bar {
+    -fx-base: -fx-primary;
+    -fx-background-color: -fx-primary;
+}
+.context-menu {
+    -fx-background-color: derive(-fx-primary, 20%); /* Giam mau -fx-primary --> not too black*/
+}
+
+/* JfxHamburger STYLES */
+.jfx-hamburger-icon {
+    -fx-spacing: 7;
+}
+.jfx-hamburger-icon StackPane {
+    -fx-background-color: -fx-secondary;
+    -fx-background-radius: 5px;
+}
+
+/* RIGHT TOOLBAR STYLES */
+.toolbar-buton {
+    -fx-background-color: derive(-fx-primary, 20%);
+}
+.toolbar-buton:hover {
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: -fx-primary;
+}
+.toolbar-buton:hover .glyph-icon {
+    -fx-fill: -fx-primary;
+}

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane prefHeight="600.0" prefWidth="700.0" stylesheets="@../css/main.css" xmlns="http://javafx.com/javafx/8.0.144" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vn.bluit.tvv.contest.controller.MainController">
+   <children>
+      <BorderPane>
+         <top>
+            <MenuBar BorderPane.alignment="CENTER">
+               <menus>
+                  <Menu mnemonicParsing="false" text="Hệ thống">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Phòng chờ" />
+                        <MenuItem mnemonicParsing="false" text="Sao lưu" />
+                        <MenuItem mnemonicParsing="false" text="Phục hồi" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" text="Khóa thao tác" />
+                        <MenuItem mnemonicParsing="false" text="Xem nhật ký" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" text="Thoát" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Danh mục">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Học viên" />
+                        <MenuItem mnemonicParsing="false" text="Nhân viên" />
+                        <MenuItem mnemonicParsing="false" text="Kỳ thi" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" text="Câu hỏi" />
+                        <MenuItem mnemonicParsing="false" text="Lĩnh vực" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Tổ chức thi">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Tạo đề thi" />
+                        <MenuItem mnemonicParsing="false" text="Phân công coi thi" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Tìm kiếm">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Thông tin học viên" />
+                        <MenuItem mnemonicParsing="false" text="Thông tin câu hỏi" />
+                        <MenuItem mnemonicParsing="false" text="Thông tin kỳ thi" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Thống kê">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Thí sinh dự thi" />
+                        <MenuItem mnemonicParsing="false" text="Kết quả thi" />
+                        <MenuItem mnemonicParsing="false" text="Mật độ câu hỏi" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Trợ giúp">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Xem hướng dẫn" />
+                        <MenuItem mnemonicParsing="false" text="Thông tin bản quyền" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+         </top>
+         <center>
+            <AnchorPane BorderPane.alignment="CENTER">
+               <children>
+                  <JFXTabPane>
+                     <tabs>
+                        <Tab text="Giám sát thi">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                           </content>
+                        </Tab>
+                        <Tab text="Biểu đồ">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" />
+                           </content>
+                        </Tab>
+                     </tabs>
+                  </JFXTabPane>
+                  <JFXHamburger fx:id="hamburger" styleClass="jfx-hamburger-icon" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="70.0" />
+               </children>
+            </AnchorPane>
+         </center>
+         <right>
+            <JFXDrawer fx:id="drawer" defaultDrawerSize="150.0" direction="RIGHT" BorderPane.alignment="CENTER" />
+         </right>
+      </BorderPane>
+   </children>
+</StackPane>

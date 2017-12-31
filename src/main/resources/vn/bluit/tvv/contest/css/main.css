@@ -21,15 +21,15 @@
 }
 .login-button {
     -fx-border-color: -fx-secondary;
-    -fx-border-radius: 20px;
-    -fx-background-radius: 20px;
+    -fx-border-radius: 16px;
+    -fx-background-radius: 16px;
     -fx-pref-width: 100;
     -fx-font-size: 13px;
 }
 .setting-button {
     -fx-border-color: -fx-secondary;
-    -fx-border-radius: 5px;
-    -fx-background-radius: 5px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
     -fx-pref-width: 100;
     -fx-font-size: 13px;
 }
@@ -39,7 +39,7 @@
     -fx-text-fill: -fx-primary;
 }
 /* thiet lap mau cho fontawesome ben trong Button */
-.login-button:hover, .setting-button:hover .glyph-icon {
+.login-button:hover .glyph-icon, .setting-button:hover .glyph-icon {
     -fx-fill: -fx-primary;
 }
 
@@ -51,6 +51,12 @@
 .invalid-aut {
     -jfx-unfocus-color: -fx-red;
     -jfx-focus-color: -fx-red;
+}
+
+.combo-box-base {
+    -fx-text-fill: -fx-primarytext;
+    -fx-font-size: 12pt;
+    -jfx-focus-color: -fx-secondary;
 }
 
 /* JFXTABPANE STYLES*/
@@ -70,6 +76,11 @@
 }
 .context-menu {
     -fx-background-color: derive(-fx-primary, 20%); /* Giam mau -fx-primary --> not too black*/
+}
+
+/* jfxcombobox */
+.jfx-combo-box .label {
+
 }
 
 /* JfxHamburger STYLES */
